@@ -84,6 +84,7 @@ main {
     width: 40%;
     height: 100%;
 }
+
 main a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -92,6 +93,7 @@ main a {
 main p {
     font-size: 0.9rem;
 }
+
 .c1-izquierda, .c3-izquierda {
     height: 33.3333%;
     width: 100%;
@@ -109,10 +111,10 @@ main p {
     flex-direction: column;
 }
 
+
 .c1-derecha, .c3-derecha {
     height: 33.3333%;
     width: 100%;
-     grey;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -138,7 +140,6 @@ main p {
     margin-left: 1rem;
 }
 
-
 .c1-derecha a, .c3-derecha a {
     margin-left: 1.5rem;
 }
@@ -161,4 +162,61 @@ main p {
 }
 .contenedor-columna-abajo div {
     margin: 0 3.5rem;
+}
+.contenedor-buscador {
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;    
+    border: 1px solid black;
+}
+.contenedor-buscador-icono button{
+    height: 3rem;
+    width: 4rem;
+    background-image: url('https://www.pikpng.com/pngl/b/151-1513236_icono-lupa-home-11-icono-de-una-lupa.png');
+    background-size: 1.8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: blue;
+    bottom: unset;
+}
+.contenedor-buscador-idioma select {
+    border: none;
+    height: 3rem;
+    width: 3.5rem;
+    font-size: 0.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contenedor-buscador-input input {
+    border: none;
+    height: 3rem;
+    min-width: 30rem;
+}
+.contenedor-idioma {
+    margin-top: 1rem;
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.contenedor-idioma-lineaIzq {
+    width: 20%;
+    height: 0.1rem;
+    background-color: rgb(119, 113, 119);;
+}
+.contenedor-idioma select {
+    width: 50%;
+    height: 3rem;
+    border-radius: 1rem;
+    justify-content: center;
+}
+.contenedor-idioma-lineaDer {
+    width: 20%;
+    height: 0.1rem;
+    background-color: rgb(119, 113, 119);
 }
