@@ -31,20 +31,30 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 .contenedor-columna {
     width: 55rem;
     height: 35rem;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    
 }
+
+.contenedor-columna a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: Poppins;
+    color: #3366cc;
+}
+.contenedor-columna p {
+    font-size: 1.2rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
 .contenedor-columna-arriba {
     display: flex;
     width: 100%;
-    height: 20%;
-    justify-content: space-around;
-    align-items: center;
-    
+    height: 20%;    
 }
 .contenedor-columna-enmedio {
     display: flex;
@@ -55,22 +65,39 @@ main {
     display: flex;
     width: 100%;
     height: 20%;
-    justify-content: center;
-    align-items: center;
 }
-.contenedor-arriba-izquierda,
-.contenedor-arriba-derecha {
-    width: 25%;
-    height: 65%;
+.contenedor-arriba-izquierda {
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: blue;
-    margin: 100rem;
+    justify-content: flex-end;
+    
 }
-.contenedor-columna-arriba div {
-    margin: 0 2rem;
+.contenedor-arriba-derecha {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contenedor-arriba-izquierda div {
+    width: 12rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5.5rem;
+}
+.contenedor-arriba-derecha div {
+    width: 12rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5.5rem;
 }
 .contenedor-enmedio-izquierda {
     width: 30%;
@@ -89,84 +116,96 @@ main {
     height: 100%;
 }
 
-main a {
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-main p {
-    font-size: 0.9rem;
-}
-
-.c1-izquierda, .c3-izquierda {
+.c1-izquierda, .c2-izquierda, .c3-izquierda {
     height: 33.3333%;
     width: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.c1-izquierda div,
+.c2-izquierda div,
+.c3-izquierda div {
+    width: 12rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.c1-izquierda, .c3-izquierda {
+    margin-left: 4rem;
 }
 .c2-izquierda {
+    margin-left: 2rem;
+}
+
+.c1-derecha, .c2-derecha, .c3-derecha {
     height: 33.3333%;
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.c1-derecha, .c3-derecha {
-    height: 33.3333%;
-    width: 100%;
+.c1-derecha div,
+.c2-derecha div,
+.c3-derecha div {
+    width: 12rem;
+    height: 5rem;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
-}
-.c2-derecha {
-    height: 33.3333%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+}
+.c1-derecha div, .c3-derecha div {
+    margin-right: 8rem;
+}
+.c2-derecha div {
+    margin-right: 4rem;
 }
 
 
-.c1-izquierda a, .c3-izquierda a {
-    margin-right: 1.5rem;
-}
-.c2-izquierda a {
-    margin-left: 2.5rem;
-}
-.c2-izquierda p {
-    margin-left: 1rem;
-}
-
-.c1-derecha a, .c3-derecha a {
-    margin-left: 1.5rem;
-}
-.c2-derecha a {
-    margin-right: 2.5rem;
-}
-.c2-derecha p {
-    margin-right: 1rem;
-}
-
-
-.contenedor-abajo-izquierda,
-.contenedor-abajo-derecha {
-    width: auto;
+.contenedor-abajo-izquierda {
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    
+}
+.contenedor-abajo-derecha {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contenedor-abajo-izquierda div {
+    width: 12rem;
+    height: 5rem;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4.5rem;
 }
-.contenedor-columna-abajo div {
-    margin: 0 3.5rem;
+.contenedor-abajo-derecha div {
+    width: 12rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4.5rem;
 }
+.div-boton-idioma:hover {
+    background-color: rgb(224, 222, 218);
+    cursor: pointer;
+}
+
 .contenedor-buscador {
     border-radius: 5px;
     margin-top: 1rem;
@@ -184,7 +223,6 @@ main p {
     background-size: 1.8rem;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: blue;
     bottom: unset;
 }
 .contenedor-buscador-idioma select {
